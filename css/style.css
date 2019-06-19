@@ -1,48 +1,106 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 body {
-	line-height: 1;
+  background-color: #ffc801;
 }
-ol, ul {
-	list-style: none;
+
+.hambuger-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 30px;
 }
-blockquote, q {
-	quotes: none;
+video {
+  width: 100%;
+  margin-top: 80px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.hambuger1,
+.hambuger2,
+.hambuger3 {
+  width: 35px;
+  height: 5px;
+  background-color: #89352a;
+  margin: 6px 0;
+  transition: 0.4s;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.hambuger-container {
+  display: inline-block;
+  cursor: pointer;
+  
 }
+.change .hambuger1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .hambuger2 {
+  opacity: 0;
+}
+
+.change .hambuger3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 8px 0;
+}
+ul > li > a {
+  text-decoration: none;
+  color:#ffc801;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+}
+
+.nav{
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+
+ul > li > a:hover {
+  font-weight: bold;
+}
+
+.change{
+  display: block;
+}
+
+.menu-bg, #menu-bar{
+  top:0;
+  left:0;
+  position: absolute;
+}
+.menu-bg{
+  z-index: 1;
+  width:0;
+  height:0;
+  background: radial-gradient(circle, #da6505,#da6505);
+  border-radius: 30%;
+  transition: 0.3s ease;
+}
+#menu-bar{
+  z-index: 2;
+}
+.change-bg{
+  width: 550px;
+  height: 480px;
+  transform: translate(-60%, -30%);
+  margin: 30px 0 50px 40px;
+}
+.fantastic {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 300px;
+}
+
+.bggif img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+

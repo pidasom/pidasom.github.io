@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+body {
+    background-color: #000000;
+    margin-bottom: 80px;
+  }
+  h1{
+    font-family: 'Playfair Display', serif;
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    font-size: 50px;
+    color: #ffc801;
+  }
+  .tracking-in-expand .trail {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 50px;
+    color: #ffc801;
+  }
+  .hambuger-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+  }
+
+  .hambuger1,
+  .hambuger2,
+  .hambuger3 {
+    width: 35px;
+    height: 5px;
+    background-color: #89352a;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .hambuger-container {
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  .change .hambuger1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .hambuger2 {
+    opacity: 0;
+  }
+  
+  .change .hambuger3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  div > p {
+    list-style-type: none;
+    padding: 8px 0;
+  }
+  div > p > a {
+    text-decoration: none;
+    color:#da6505;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+  }
+  
+  .nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  div > p > a:hover {
+    font-weight: bold;
+  }
+  
+  .change{
+    display: block;
+  }
+  
+  .menu-bg, #menu-bar{
+    top:0;
+    left:0;
+    position: absolute;
+  }
+  .menu-bg{
+    z-index: 1;
+    width:0;
+    height:0;
+    background: radial-gradient(circle, #ffc801,#ffc801);
+    border-radius: 30%;
+    transition: 0.3s ease;
+  }
+  #menu-bar{
+    z-index: 2;
+  }
+  .change-bg{
+    width: 550px;
+    height: 480px;
+    transform: translate(-60%, -30%);
+    margin: 30px 0 50px 40px;
+  }
+
+  
+
+  *,
+  *:after,
+  *:before {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  ul {
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 80px;
+    list-style: none;
+    width: 955px;
+    height: 450px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px 1px;
+  }
+  
+  li {
+    position: relative;
+    width: 190px;
+    height: 450px;
+    float: left;
+    /* border-left: 1px solid white; */
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    box-shadow: -2px 0 10px 2px;
+  }
+  
+  ul li:first-child {
+    border: none;
+  }
+  
+  span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    color: white;
+    white-space: nowrap;
+    padding: 20px;
+    background: -moz-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* FF3.6+ */
+    /* background: -webkit-gradient( */
+      /* linear,
+      left top,
+      right top, */
+      /* color-stop(0%, rgba(0, 0, 0, 0.65)), */
+      /* color-stop(100%, rgba(0, 0, 0, 0)) */
+     /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="#a6000000",
+        endColorstr="#00000000",
+        GradientType=1
+      ); /* IE6-9 */
+  }
+  
+  img {
+    width: 800px;
+    height: 450px;
+  }
+  
+  ul:hover li {
+    width: 50px;
+  }
+  
+  ul li:hover {
+    width: 750px;
+  }
+  
+  ul::after { content: ''; display: table; clear: both }
+
+  video {
+      margin-left: 110px;
+  }
+  
+  
+  
